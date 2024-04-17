@@ -4,10 +4,7 @@ const mongoose=require('mongoose');
 router.use(express.json());
 const db="mongodb://localhost:27017/Project";
 
-mongoose.connect(db, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true
-}).then(() => {
+mongoose.connect(db).then(() => {
     console.log('Connected to MongoDB');
 }).catch((error) => {
     console.error('Error connecting to MongoDB:', error);
