@@ -1,5 +1,6 @@
 const express = require('express');
 const router = express.Router();
+const cors=require('cors');
 const mongoose = require('mongoose');
 router.use(express.json());
 const db = "mongodb+srv://shrawanigaikwad5:h9Lz1DXVVHsa1CZo@project.p9zw7sy.mongodb.net/?retryWrites=true&w=majority&appName=Project";
