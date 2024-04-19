@@ -3,7 +3,8 @@ const router = express.Router();
 const mongoose = require('mongoose');
 router.use(express.json());
 const db = "mongodb+srv://shrawanigaikwad5:h9Lz1DXVVHsa1CZo@project.p9zw7sy.mongodb.net/?retryWrites=true&w=majority&appName=Project";
-
+const app=express();
+app.use(cors());
 mongoose.connect(db).then(() => {
     console.log('Connected to MongoDB');
 }).catch((error) => {
