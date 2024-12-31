@@ -25,7 +25,7 @@ const contactSchema = new mongoose.Schema({
     Email: String,
     Phone: String,
     Subject : String,
-    Message : String
+    Query : String
 });
 
 const Help = mongoose.model('help', helpSchema, 'help');
