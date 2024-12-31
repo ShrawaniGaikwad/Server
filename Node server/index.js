@@ -29,7 +29,7 @@ const contactSchema = new mongoose.Schema({
 });
 
 const Help = mongoose.model('help', helpSchema, 'help');
-const Contact = mongoose.model('contact', helpSchema, 'contact');
+const Contact = mongoose.model('contact',contactSchema , 'contact');
 
 router.post('/help', async (req, res) => {
     try {
